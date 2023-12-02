@@ -17,6 +17,9 @@
     -Display Student Records
     -Exit    
 
+## Run Document 
+** in the run document you can see and read all concole parts **
+
 ##  Library_log
 ** in library log text file will be saved all information about data/time/year and user information about books
 
@@ -24,7 +27,7 @@
 
 - Visual Studio code
 - Dev C++
-- C/C++ compiler (Recommended: GCC Compiler)
+- C/C++ compiler 
 - txt file
 
 
