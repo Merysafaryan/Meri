@@ -4,25 +4,26 @@
 
 ## Description
 
-Things you can do with this system
+    **--User Menu--**
+    
+    -Issue a Book    
+    -Return a Book
+    -Exit dding Users
+    
+   ** --Admin menu--**
+    
+    -Add Book
+    -Remove Book
+    -Display Student Records
+    -Exit    
 
-- Adding Users
-- Adding Books
-- Modifying Details  of Users
-- Modifying Details of Books
-- Searching specific USER from stored records
-- Searching specific BOOK from stored records
-- Serach Book name
-- Renting Books
-- Listing all User records
-- Listing all Book records
-- Listing all Rented Book records
-- Deleting Book record
-  
+##  Library_log
+** in library log text file will be saved all information about data/time/year and user information about books
+
 ## Requirements for using it
 
 - Visual Studio code
 - Dev C++
 - C/C++ compiler (Recommended: GCC Compiler)
-- txt files
+- txt file
 
