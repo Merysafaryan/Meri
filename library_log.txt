@@ -1,0 +1,5 @@
+Issued book: Stone and Pain to meri
+Removed book with ID: 104
+[2023-12-02 13:05:59] Issued book: A Tale Of Two Cities to mer
+[2023-12-02 13:06:03] Removed book with ID: 101
+[2023-12-02 13:06:10] Returned book with ID: 101
