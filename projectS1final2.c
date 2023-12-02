@@ -177,11 +177,11 @@ void adminMenu() {
                 int id;
                 printf("Enter book details:\n");
                 printf("Name: ");
-                scanf("%s", name);
+                scanf("%29s", name);
                 printf("Author: ");
-                scanf("%s", author);
+                scanf("%29s", author);
                 printf("ID: ");
-                scanf("%d", &id);
+                scanf("%29d", &id);
                 addBook(name, author, id);
                 printf("Book added successfully.\n");
                 break;
