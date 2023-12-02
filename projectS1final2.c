@@ -3,6 +3,10 @@
 #include <string.h>
 #include <time.h>
 
+/**
+ * @struct Book
+ * Structure to represent a book in the library.
+ */
 struct Book {
     char name[30];
     char author[30];
@@ -10,6 +14,10 @@ struct Book {
     struct Book* next;
 };
 
+/**
+ * @struct Student
+ * Structure to represent a student in the library.
+ */
 struct Student {
     char name[30];
     int id;
@@ -19,6 +27,7 @@ struct Student {
 struct Book* library = NULL;
 struct Student* students = NULL;
 
+// Function prototypes
 void displayUserMenu();
 void displayAdminMenu();
 void userMenu();
@@ -33,6 +42,9 @@ void removeBook(int id);
 void saveToFile(char fileName[], char data[]);
 void getCurrentDateTime(char dateTime[]);
 
+/**
+ * @brief Frees memory allocated for books and students.
+ */
 void freeMemory() {
     struct Book* currentBook = library;
     while (currentBook != NULL) {
@@ -49,6 +61,12 @@ void freeMemory() {
     }
 }
 
+/**
+ * @brief Opens a file with a specified mode.
+ * @param fileName The name of the file.
+ * @param mode The mode in which to open the file.
+ * @return A pointer to the opened file.
+ */
 FILE* openFile(char fileName[], char mode[]) {
     FILE* file = fopen(fileName, mode);
     if (file == NULL) {
@@ -58,12 +76,21 @@ FILE* openFile(char fileName[], char mode[]) {
     return file;
 }
 
+/**
+ * @brief Saves data to a file.
+ * @param fileName The name of the file.
+ * @param data The data to be saved.
+ */
 void saveToFile(char fileName[], char data[]) {
     FILE* file = openFile(fileName, "a");
     fprintf(file, "%s\n", data);
     fclose(file);
 }
 
+/**
+ * @brief Gets the current date and time in the specified format.
+ * @param dateTime Buffer to store the date and time.
+ */
 void getCurrentDateTime(char dateTime[]) {
     time_t rawtime;
     struct tm* timeinfo;
@@ -74,6 +101,11 @@ void getCurrentDateTime(char dateTime[]) {
     strftime(dateTime, 20, "%Y-%m-%d %H:%M:%S", timeinfo);
 }
 
+/**
+ * @brief Saves data to a file with a timestamp.
+ * @param fileName The name of the file.
+ * @param data The data to be saved.
+ */
 void saveToFileWithTimestamp(char fileName[], char data[]) {
     char dateTime[20];
     getCurrentDateTime(dateTime);
@@ -83,6 +115,9 @@ void saveToFileWithTimestamp(char fileName[], char data[]) {
     fclose(file);
 }
 
+/**
+ * @brief Displays the user menu.
+ */
 void displayUserMenu() {
     printf("\nUser Menu\n");
     printf("1. Issue a Book\n");
@@ -90,6 +125,9 @@ void displayUserMenu() {
     printf("3. Exit\n");
 }
 
+/**
+ * @brief Displays the admin menu.
+ */
 void displayAdminMenu() {
     printf("\nAdmin Menu\n");
     printf("1. Add Book\n");
@@ -98,6 +136,9 @@ void displayAdminMenu() {
     printf("4. Exit\n");
 }
 
+/**
+ * @brief user menu options.
+ */
 void userMenu() {
     int userChoice;
     do {
@@ -120,6 +161,9 @@ void userMenu() {
     } while (1);
 }
 
+/**
+ * @brief  admin menu options.
+ */
 void adminMenu() {
     int adminChoice;
     do {
@@ -161,6 +205,9 @@ void adminMenu() {
     } while (1);
 }
 
+/**
+ * @brief Initializes the library with some default books.
+ */
 void initializeLibrary() {
     addBook("A Tale Of Two Cities", "Charles Dickens", 101);
     addBook("The Devil's Diary", "Leonid Andreev", 102);
@@ -168,6 +215,12 @@ void initializeLibrary() {
     addBook("Stone and Pain", "Karel Shoults", 104);
 }
 
+/**
+ * @brief Adds a book to the library.
+ * @param name The name of the book.
+ * @param author The author of the book.
+ * @param id The ID of the book.
+ */
 void addBook(char name[], char author[], int id) {
     struct Book* newBook = (struct Book*)malloc(sizeof(struct Book));
     strcpy(newBook->name, name);
@@ -177,6 +230,11 @@ void addBook(char name[], char author[], int id) {
     library = newBook;
 }
 
+/**
+ * @brief Adds a student to the library.
+ * @param name The name of the student.
+ * @param id The ID of the student.
+ */
 void addStudent(char name[], int id) {
     struct Student* newStudent = (struct Student*)malloc(sizeof(struct Student));
     strcpy(newStudent->name, name);
@@ -185,10 +243,13 @@ void addStudent(char name[], int id) {
     students = newStudent;
 }
 
+/**
+ * @brief  the process of issuing a book to a student.
+ */
 void issueBook() {
     char studentName[30];
     printf("Enter your name: ");
-    scanf("%29s", studentName);
+    scanf("%s", studentName);
 
     printf("Available Books:\n");
 
@@ -225,6 +286,9 @@ void issueBook() {
     printf("Book not found with ID: %d\n", bookId);
 }
 
+/**
+ * @brief the process of returning a book by a student.
+ */
 void returnBook() {
     int bookId;
     printf("Enter the book ID you want to return: ");
@@ -251,6 +315,9 @@ void returnBook() {
     printf("Student with book ID: %d not found\n", bookId);
 }
 
+/**
+ * @brief Displays the records of students in the library.
+ */
 void displayStudents() {
     struct Student* currentStudent = students;
     printf("Student Records:\n");
@@ -260,6 +327,10 @@ void displayStudents() {
     }
 }
 
+/**
+ * @brief Removes a book from the library by ID.
+ * @param id The ID of the book to be removed.
+ */
 void removeBook(int id) {
     struct Book* currentBook = library;
     struct Book* previousBook = NULL;
@@ -288,6 +359,10 @@ void removeBook(int id) {
     printf("Book not found with ID: %d\n", id);
 }
 
+/**
+ * @brief The main function of the library management system.
+ * @return 0 upon successful execution.
+ */
 int main() {
     int roleChoice;
     initializeLibrary();
@@ -311,6 +386,7 @@ int main() {
                 break;
             case 3:
                 printf("Exiting the system. Goodbye!\n");
+                freeMemory(); // Free allocated memory before exit
                 exit(0);
             default:
                 printf("Invalid option. Please try again.\n");
