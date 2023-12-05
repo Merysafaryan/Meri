@@ -105,6 +105,7 @@ int main() {
 
     return 0;
 }
+
  Static Data Collection:
 Collecting User Input:
 
@@ -129,7 +130,9 @@ int main() {
         printf("%d ", staticArray[i]);
     }
     printf("\n");
-    return 0;}
+    
+    return 0;
+    }
     
 **2.2 Data Integration**
 
