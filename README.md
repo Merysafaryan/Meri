@@ -70,16 +70,13 @@ Importance of Data Points:
 
 **2.1 Data Collection Implementation**
 
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
-int main() {
+int main() { 
 
     srand(time(NULL));
-
     for (int i = 0; i < 10; ++i) {
         int randomNumber = rand() % 100;  // Generates a random number between 0 and 99
         printf("Random Number %d: %d\n", i + 1, randomNumber);
@@ -94,17 +91,15 @@ int main() {
 
 int main() {
 
-    // Seed the random number generator
     srand(time(NULL));
-
-    // Simulate collecting sensor data for 5 readings
     for (int i = 0; i < 5; ++i) {
-        double sensorReading = (double)rand() / RAND_MAX * 10.0;  // Generates a random double between 0 and 10
+        double sensorReading = (double)rand() / RAND_MAX * 10.0; 
         printf("Sensor Reading %d: %.2f\n", i + 1, sensorReading);
     }
 
     return 0;
 }
+
 #include <stdio.h>
 
 int main() {
