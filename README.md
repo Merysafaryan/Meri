@@ -123,7 +123,6 @@ int main() {
 #include <stdio.h>
 
 int main() {
-    // Static data initialization
     int staticArray[] = {1, 2, 3, 4, 5};
     printf("Static Array Elements: ");
     for (int i = 0; i < sizeof(staticArray) / sizeof(staticArray[0]); ++i) {
