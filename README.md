@@ -12,7 +12,8 @@ Develop a user-friendly interface for both librarians and patrons, facilitating 
 
 # 1.Project setup and Planning
 
-**1.1Project Scope Definition**
+**1.1 Project Scope Definition**
+
 The project's scope encompasses a detailed description of a selected manufacturing process, elucidating its intricacies and functionalities. The chosen process was selected after careful consideration of its alignment with project objectives, aiming to enhance production efficiency and streamline workflows. The decision to adopt this specific manufacturing process reflects its potential to meet project goals and contribute to the optimization of manufacturing operations, ensuring the attainment of desired outcomes in the realm of production and efficiency.
 
 **1.2 Hardware and Software Setup**
