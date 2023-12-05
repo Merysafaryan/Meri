@@ -454,6 +454,13 @@ In a broader sense, the project showcases the importance of thoughtful design an
 
 In conclusion, the library management system project serves as a practical exercise in software development, emphasizing the significance of structured code, user interfaces, and efficient data management. The outcomes and lessons learned contribute to a foundation for future projects, including those involving manufacturing processes and optimization.
 
+# References
+
+**List of all references and resources used in the project.**
+
+- Youtube
+- https://www.c-sharpcorner.com/UploadFile/ea3ed6/database-design-for-library-management-system/
+-https://openlibrary.org/
 
 
 
