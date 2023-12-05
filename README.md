@@ -69,65 +69,64 @@ Importance of Data Points:
 # 2. Data Collection,Integration, and Analysis
 
 **2.1 Data Collection Implementation**
-
- Simulated Data Collection: Generating Random Numbers:
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
 int main() {
+    // Seed the random number generator
     srand(time(NULL));
+
+    // Simulate collecting 10 random numbers
     for (int i = 0; i < 10; ++i) {
-        int randomNumber = rand() % 100;  
+        int randomNumber = rand() % 100;  // Generates a random number between 0 and 99
         printf("Random Number %d: %d\n", i + 1, randomNumber);
     }
 
     return 0;
 }
 
-
-Simulating Sensor Data:
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
 int main() {
+    // Seed the random number generator
     srand(time(NULL));
 
+    // Simulate collecting sensor data for 5 readings
     for (int i = 0; i < 5; ++i) {
-        double sensorReading = (double)rand() / RAND_MAX * 10.0;  
+        double sensorReading = (double)rand() / RAND_MAX * 10.0;  // Generates a random double between 0 and 10
         printf("Sensor Reading %d: %.2f\n", i + 1, sensorReading);
     }
 
     return 0;
 }
-
-Collecting User Input:
-
 #include <stdio.h>
+
 int main() {
+    // Collecting static data from user input
     int userAge;
     printf("Enter your age: ");
     scanf("%d", &userAge);
     printf("User Age: %d\n", userAge);
+
     return 0;
 }
 
- Static Data Initialization:
- 
 #include <stdio.h>
+
 int main() {
+    // Static data initialization
     int staticArray[] = {1, 2, 3, 4, 5};
     printf("Static Array Elements: ");
     for (int i = 0; i < sizeof(staticArray) / sizeof(staticArray[0]); ++i) {
         printf("%d ", staticArray[i]);
     }
     printf("\n");
-    
+
     return 0;
-    }
-    
+}
+
 **2.2 Data Integration**
 
