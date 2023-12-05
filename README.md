@@ -77,9 +77,9 @@ Importance of Data Points:
 #include <time.h>
 
 int main() {
+
     srand(time(NULL));
 
-    // Simulate collecting 10 random numbers
     for (int i = 0; i < 10; ++i) {
         int randomNumber = rand() % 100;  // Generates a random number between 0 and 99
         printf("Random Number %d: %d\n", i + 1, randomNumber);
