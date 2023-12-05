@@ -74,6 +74,7 @@ Importance of Data Points:
 #include <time.h>
 
 int main() {
+
     // Seed the random number generator
     srand(time(NULL));
 
@@ -91,6 +92,7 @@ int main() {
 #include <time.h>
 
 int main() {
+
     // Seed the random number generator
     srand(time(NULL));
 
@@ -105,6 +107,7 @@ int main() {
 #include <stdio.h>
 
 int main() {
+
     // Collecting static data from user input
     int userAge;
     printf("Enter your age: ");
@@ -117,6 +120,7 @@ int main() {
 #include <stdio.h>
 
 int main() {
+
     // Static data initialization
     int staticArray[] = {1, 2, 3, 4, 5};
     printf("Static Array Elements: ");
