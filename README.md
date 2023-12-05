@@ -77,8 +77,6 @@ Importance of Data Points:
 #include <time.h>
 
 int main() {
-
-    // Seed the random number generator
     srand(time(NULL));
 
     // Simulate collecting 10 random numbers
