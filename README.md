@@ -128,4 +128,47 @@ int main() {
 }
 
 **2.2 Data Integration**
+In the provided C code for the library management system, two main data structures are used to store and manage collected data: `struct Book` and `struct Student`. Let's discuss these structures and the justification for choosing them.
+
+ 1.struct Book
+
+```c
+struct Book {
+    char name[30];
+    char author[30];
+    int id;
+    struct Book* next;
+};
+```
+Explanation:
+- struct Book is designed to represent a book in the library.
+- It contains fields for the name of the book (name), the author of the book (author), a unique identifier for the book (id), and a pointer to the next book in the linked list (next).
+- This structure is used to create a linked list of books in the library.
+
+Justification:
+- Linked lists are chosen to manage the collection of books dynamically. This allows for efficient memory usage as the size of the library can grow or shrink during runtime.
+- The `struct Book` encapsulates related information about a book in a single unit, making it easy to manage and manipulate book data.
+  
+ 2. struct Student
+
+```c
+struct Student {
+    char name[30];
+    int id;
+    struct Student* next;
+};
+```
+
+Explanation:
+- struct Student represents a student in the library.
+- It includes fields for the student's name (name), a unique identifier for the student (id), and a pointer to the next student in the linked list (next).
+- Similar to struct Book, this structure is used to create a linked list of students who have borrowed books.
+
+Justification:
+- Using a linked list for students provides a dynamic and efficient way to manage student records. Students can be added or removed from the system without the need for a fixed-size array.
+- The structure contains the necessary information about a student, and the linked list allows for easy traversal and manipulation of student records.
+
+Overall Justification:
+ Both data structures use linked lists, which are well-suited for scenarios where the size of the data can change dynamically. This is crucial in a library management system where books and student records can be added or removed. Linked lists allow for efficient memory usage as memory is allocated as needed. This is more memory-friendly compared to using static arrays, especially when the size of the library or the number of students is unknown in advance. Linked lists provide flexibility, making it easier to insert, delete, or modify elements in the collection. This is beneficial for managing a library where books are checked in and out, and student records may change over time.
+
 
