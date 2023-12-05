@@ -69,7 +69,7 @@ Importance of Data Points:
 # 2. Data Collection,Integration, and Analysis
 
 **2.1 Data Collection Implementation**
-
+```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -83,7 +83,9 @@ int main() {
 
     return 0;
 }
+```
 
+```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -98,7 +100,9 @@ int main() {
 
     return 0;
 }
+```
 
+```c
 #include <stdio.h>
 
 int main() {
@@ -111,7 +115,9 @@ int main() {
 
     return 0;
 }
+```
 
+```c
 #include <stdio.h>
 
 int main() {
@@ -126,7 +132,7 @@ int main() {
 
     return 0;
 }
-
+```
 **2.2 Data Integration**
 In the provided C code for the library management system, two main data structures are used to store and manage collected data: `struct Book` and `struct Student`. Let's discuss these structures and the justification for choosing them.
 
