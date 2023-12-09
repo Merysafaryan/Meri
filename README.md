@@ -355,8 +355,7 @@ Testing a library management system with simulated data involves executing vario
 
 ## 3.2 Documentation and Code Explanation
 
-Documentation
-How to Run the Project:
+**Guidelines on how to run the project:**
 
 1.Compile the Code:
    - Use a C compiler  to compile the code.
@@ -371,8 +370,7 @@ How to Run the Project:
    ```
    - Follow the on-screen prompts to interact with the library management system.
 
-Code Structure and Organization:
-The code is organized into several sections:
+**Code Structure and Organization:**
 
 1. Struct Definitions:
    - Defines two structures (`Book` and `Student`) to represent books and students in the library.
@@ -418,7 +416,7 @@ The code is organized into several sections:
     - `main`: The main function that serves as the entry point of the program.
     - Initiates the library, displays the main menu, and routes to user or admin menus based on user input.
 
-Detailed Code Explanation
+**Detailed Code Explanation**
 
 1. Struct Definitions:
    - Defines `Book` and `Student` structures to encapsulate book and student information.
@@ -496,9 +494,11 @@ In conclusion, the library management system project serves as a practical exerc
 **List of all references and resources used in the project.**
 
 - https://www.youtube.com/watch?v=4082n6dkxYU
+- https://www.youtube.com/watch?v=v-SlXHJOMxc&list=PLOtvlR0-E4xY6_fvOtQlj_FyXUZk-f84D
 - https://www.c-sharpcorner.com/UploadFile/ea3ed6/database-design-for-library-management-system/
 - https://openlibrary.org/
-
+- https://www.saasworthy.com/list/project-management-software?utm_source=google&utm_medium=cpc&utm_campaign=&campaignid=20137802323&adgroupid=148687770666&utm_term=project%20management%20tool&device=c&gclid=EAIaIQobChMIxbDGrIOCgwMVAEBBAh0p6A3mEAAYASAAEgJN2PD_BwE
+  
 
 
 
