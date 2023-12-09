@@ -8,7 +8,9 @@ A Library Management System is software used by libraries to manage and organize
 
 Traditionally, libraries have been vital hubs for learning and research, acting as gatekeepers to a vast array of knowledge. With the advent of technology, the need for an automated and user-friendly system to manage library resources has become increasingly apparent. This project is motivated by the desire to modernize library operations, reducing manual efforts and enhancing user experience.The motivation behind this project also stems from the growing demand for efficiency in managing library tasks, such as book issuance, returns, and user records. 
 
-Develop a user-friendly interface for both librarians and patrons, facilitating seamless processes for book issuance, returns, and user record management. Provide a digital platform that allows users to access the library's resources remotely, fostering a more inclusive learning environment.Real-time data collection and analysis are crucial in the context of library management for several reasons:Real-time data allows librarians to understand user behavior and preferences, enabling them to tailor services to meet the specific needs and expectations of library patrons.
+Develop a user-friendly interface for both librarians and patrons, facilitating seamless processes for book issuance, returns, and user record management. Provide a digital platform that allows users to access the library's resources remotely, fostering a more inclusive learning environment.
+
+Real-time data collection and analysis are crucial in the context of library management for several reasons:Real-time data allows librarians to understand user behavior and preferences, enabling them to tailor services to meet the specific needs and expectations of library patrons.
 
 # 1.Project setup and Planning
 
