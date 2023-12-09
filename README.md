@@ -106,6 +106,7 @@ Importance of Data Points:
 # 2. Data Collection,Integration, and Analysis
 
 **2.1 Data Collection Implementation**
+
 Generating Random Numbers:
 ```c
 #include <stdio.h>
@@ -172,6 +173,7 @@ int main() {
 }
 ```
 **2.2 Data Integration**
+
 In the provided C code for the library management system, two main data structures are used to store and manage collected data: `struct Book` and `struct Student`. Let's discuss these structures and the justification for choosing them.
 
  1.struct Book
@@ -211,9 +213,6 @@ Explanation:
 Justification:
 - Using a linked list for students provides a dynamic and efficient way to manage student records. Students can be added or removed from the system without the need for a fixed-size array.
 - The structure contains the necessary information about a student, and the linked list allows for easy traversal and manipulation of student records.
-
-Overall Justification:
- Both data structures use linked lists, which are well-suited for scenarios where the size of the data can change dynamically. This is crucial in a library management system where books and student records can be added or removed. Linked lists allow for efficient memory usage as memory is allocated as needed. This is more memory-friendly compared to using static arrays, especially when the size of the library or the number of students is unknown in advance. Linked lists provide flexibility, making it easier to insert, delete, or modify elements in the collection. This is beneficial for managing a library where books are checked in and out, and student records may change over time.
 
 **2.3 Data Analysis**
 ```c 
@@ -306,6 +305,7 @@ int main() {
 # 3. Testing, Documentation, and Presentation
 
 **3.1 Testing and Validation**
+
 Testing a library management system with simulated data involves executing various functionalities and ensuring that they produce the expected results. In the case of the provided code, you can simulate user and admin interactions to test the system. Here's an example of how you might test and validate the system:
 
 1. Test User Interactions:
