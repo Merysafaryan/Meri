@@ -9,9 +9,9 @@ Traditionally, libraries have been vital hubs for learning and research, acting 
 Develop a user-friendly interface for both librarians and patrons, facilitating seamless processes for book issuance, returns, and user record management. Provide a digital platform that allows users to access the library's resources remotely, fostering a more inclusive learning environment.
 
 **Background and motivation for the project**
-
--Legacy Challenges:
-   The existing manual systems for library management often pose challenges in terms of efficiency, accuracy, and accessibility. These limitations have highlighted the need for a more sophisticated and automated solution.
+The project is motivated by the goal of providing librarians with tools that enable strategic planning and data-driven decision-making. Insights derived from the system's analytics can inform resource acquisition and allocation strategies.
+   -Legacy Challenges:
+         The existing manual systems for library management often pose challenges in terms of            efficiency, accuracy, and accessibility. These limitations have highlighted the need            for a more sophisticated and automated solution.
    
 -Information Overload:
    With an ever-expanding collection of resources, libraries face the challenge of managing vast amounts of information effectively. A digital solution becomes imperative to organize and navigate this wealth of knowledge.
