@@ -60,7 +60,6 @@ The project's scope encompasses a detailed description of a selected manufacturi
    - stdlib.h
    - string.h
    - time.h
-The provided code appears to be a simple implementation of a library management system in C. Below is a brief overview of the key components and functionalities:
 
 **1.3 Data Collection Plan**
 
