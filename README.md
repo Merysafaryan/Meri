@@ -49,11 +49,11 @@ The project is motivated by the goal of providing librarians with tools that ena
    
 # 1.Project setup and Planning
 
-**1.1 Project Scope Definition**
+## 1.1 Project Scope Definition
 
 The project's scope encompasses a detailed description of a selected manufacturing process, elucidating its intricacies and functionalities. The chosen process was selected after careful consideration of its alignment with project objectives, aiming to enhance production efficiency and streamline workflows. The decision to adopt this specific manufacturing process reflects its potential to meet project goals and contribute to the optimization of manufacturing operations, ensuring the attainment of desired outcomes in the realm of production and efficiency. 
 
-**1.2 Hardware and Software Setup**
+## 1.2 Hardware and Software Setup
 1. C programming language
 2. C libraries:
    - stdio.h
@@ -61,7 +61,7 @@ The project's scope encompasses a detailed description of a selected manufacturi
    - string.h
    - time.h
 
-**1.3 Data Collection Plan**
+## 1.3 Data Collection Plan
 
 Book Structure (struct Book):
   - Attributes: name, author, id, next (a pointer to the next book).
@@ -104,7 +104,7 @@ Importance of Data Points:
 
 # 2. Data Collection,Integration, and Analysis
 
-**2.1 Data Collection Implementation**
+## 2.1 Data Collection Implementation
 
 Generating Random Numbers:
 ```c
@@ -171,7 +171,7 @@ int main() {
     return 0;
 }
 ```
-**2.2 Data Integration**
+## 2.2 Data Integration
 
 In the provided C code for the library management system, two main data structures are used to store and manage collected data: `struct Book` and `struct Student`. Let's discuss these structures and the justification for choosing them.
 
@@ -213,7 +213,8 @@ Justification:
 - Using a linked list for students provides a dynamic and efficient way to manage student records. Students can be added or removed from the system without the need for a fixed-size array.
 - The structure contains the necessary information about a student, and the linked list allows for easy traversal and manipulation of student records.
 
-**2.3 Data Analysis**
+## 2.3 Data Analysis
+
 ```c 
 #include <stdio.h>
 #include <stdlib.h>
@@ -303,7 +304,7 @@ int main() {
 ```
 # 3. Testing, Documentation, and Presentation
 
-**3.1 Testing and Validation**
+## 3.1 Testing and Validation
 
 Testing a library management system with simulated data involves executing various functionalities and ensuring that they produce the expected results. In the case of the provided code, you can simulate user and admin interactions to test the system. Here's an example of how you might test and validate the system:
 
@@ -352,7 +353,7 @@ Testing a library management system with simulated data involves executing vario
     - Evaluate the overall user experience and interface during interactions.
 
 
-**3.2 Documentation and Code Explanation**
+## 3.2 Documentation and Code Explanation
 
 Documentation
 How to Run the Project:
@@ -496,7 +497,7 @@ In conclusion, the library management system project serves as a practical exerc
 
 - https://www.youtube.com/watch?v=4082n6dkxYU
 - https://www.c-sharpcorner.com/UploadFile/ea3ed6/database-design-for-library-management-system/
--https://openlibrary.org/
+- https://openlibrary.org/
 
 
 
